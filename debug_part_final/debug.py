@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-
+"""
+try not to use local file instead of url file.
+"""
 
 import csv
 import datetime
 from sqlite3 import Date
-import requests
+# import requests
 import operator
 
 
@@ -29,7 +31,7 @@ def get_file_lines(url):
     """Returns the lines contained in the file at the given URL"""
 
     # Download the file over the internet
-    response = requests.get(url, stream=True)
+    # response = requests.get(url, stream=True)
     lines = []
 
     for line in response.iter_lines():
