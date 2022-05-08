@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 '''    Testing program for socket
       Author: Jimmy
+      we can use this to handle a port and response some info
 '''
 import http.server
 import socketserver
