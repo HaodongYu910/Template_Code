@@ -2,8 +2,8 @@ from PIL import Image
 import os
 
 def convert_image():
-    file_dic = "/home/student-00-faeacee2a0d2/images"
-    new_save_place = "/opt/icons/"
+    file_dic = "/Users/yuhaodong/Desktop/CODE/VScode/Template_Code/Real_world_automation/change_image_mode/images"
+    new_save_place = "/Users/yuhaodong/Desktop/CODE/VScode/Template_Code/Real_world_automation/change_image_mode/new_dist"
     # new_save_place = "/home/student-00-faeacee2a0d2/test"
 
     for file in os.listdir(file_dic):
