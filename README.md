@@ -77,11 +77,11 @@ Documents introduction:
         
         实际生活正可能用到的自动化例子：
         
-        change_image_mode：
+        1. change_image_mode：
             利用python的external lib中的pillow库，对照片文件进行处理
-            1. 更改照片尺寸
-            2. 更改照片格式
-            3. 保存照片到一个新的位置
+            (1). 更改照片尺寸
+            (2). 更改照片格式
+            (3). 保存照片到一个新的位置
             知识点：
                 可能会遇到os error 不能吧LA格式转换为JPG格式等，参考script.py中 “_colorspace”方法，即可解决
                 
@@ -107,6 +107,13 @@ Documents introduction:
                         return image.convert('L')
                     return image
         
+        2. Process_txt_upload_to_web
+            (1).利用python中的json方法，对txt文件中的内容编辑并输出json文件
+            (2).读取json文件，转换为python可读取的dictionary，并使用request.post方法将其发送到指定服务器
+            知识点：
+                a. 可以用str.split('.')[-1]检查文件的后缀名
+                b. 利用a=f.readlines(),返回值a为一个list，可以直接调用list中的序号得到特定行内容
+                
     
     
         
