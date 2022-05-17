@@ -113,7 +113,21 @@ Documents introduction:
             知识点：
                 a. 可以用str.split('.')[-1]检查文件的后缀名
                 b. 利用a=f.readlines(),返回值a为一个list，可以直接调用list中的序号得到特定行内容
-                
-    
+        
+        3. auto_generate_pdf_send_by_email
+            (1). 处理json数据，找出销量最好的车，以及销量最好的年份
+            (2). 将处理好的数据编辑出来一个table，并生成一个pdf文件
+            (3). 使用email将pdf文件发送出去
+            知识点：
+                a. 以下方法可以得到文件的文件名，扩展名
+                    with open(attachment_path, 'rb') as ap:
+                        message.add_attachment(ap.read(),
+                               maintype=mime_type,
+                               subtype=mime_subtype,
+                               filename=attachment_filename)
+                b. 以下方法可以根据指定key，对list内嵌套字典排序
+                    data = sorted(car_data, key=operator.itemgetter('total_sales'), reverse=True)
+                c. 生成pdf的body文件中，字符串中使用<br/>可以进行换行
+                d. 生成emails可以看emails.py，生成报告看reports.py
     
         

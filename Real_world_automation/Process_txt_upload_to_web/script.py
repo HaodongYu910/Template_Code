@@ -35,7 +35,6 @@ def readTXT():
     """
     从linux文档中读取多个txt文件，并按照title，author，date，feedback的格式存入json字符串
     """
-    json_data_list = []
     for file in os.listdir(txt_folder):
         if file.split('.')[-1] == "txt":
             print("now we open {}".format(file))
