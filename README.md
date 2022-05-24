@@ -73,8 +73,9 @@ Documents introduction:
         有趣的一个文件，在linux系统中启动可以占用特定的端口，并且给访问该端口回复特定信息
    
    
-   Real_World_Automation
-        
+   Real_World_Automation：
+
+        you've seen how you can modify images using Python Imaging Library; how you can interact with web services using the Python requests module, sending data in JSON format; how you can generate PDF files with the content you want; and how you can send emails with those PDFs as an attachment. 
         实际生活正可能用到的自动化例子：
         
         1. change_image_mode：
@@ -129,5 +130,12 @@ Documents introduction:
                     data = sorted(car_data, key=operator.itemgetter('total_sales'), reverse=True)
                 c. 生成pdf的body文件中，字符串中使用<br/>可以进行换行
                 d. 生成emails可以看emails.py，生成报告看reports.py
-    
+        
+        4， 综合前三个
+            (1). 处理图片，改为600*400，JPEG模式
+            (2). 上传图片到url
+            (3). 处理txt文档，转存为json文件，上传到url
+            (4). 创建pdf文件，作为附件发送邮件
+            (5). 机器运行状态监测，有问题发邮件
+            
         
